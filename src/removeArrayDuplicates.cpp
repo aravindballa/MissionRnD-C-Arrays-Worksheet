@@ -15,5 +15,17 @@ NOTES: Don't create new array, try to change the input array.
 
 void * removeArrayDuplicates(int *Arr, int len)
 {
+	int eachCount[10] = { 0 };
+	int i, uniqueCount = 0, j = 0;
+	for (i = 0; i < len; i++)
+	{
+		eachCount[Arr[i]]++;
+		uniqueCount++;
+	}
+	for (i = 0; i < 10; i++)
+	{
+		if (eachCount[i] > 0) Arr[j++] = eachCount[i];
+	}
 	return NULL;
+	
 }

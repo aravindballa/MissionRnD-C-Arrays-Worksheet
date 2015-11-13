@@ -22,5 +22,11 @@ struct student {
 };
 
 struct student ** topKStudents(struct student *students, int len, int K) {
+	int i;
+	int *sortedIndex = (int *)malloc(sizeof(int)*len);
+	for (i = 0; i < len; i++)
+	{
+
+	}
 	return NULL;
 }
